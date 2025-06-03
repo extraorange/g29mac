@@ -11,6 +11,6 @@ endif()
 
 find_library(IOKIT IOKit)
 find_library(COREFOUNDATION CoreFoundation)
-add_executable(g29mac main.cpp)
+add_executable(g29mac src/main.cpp)
 
 target_link_libraries(g29mac ${IOKIT} ${COREFOUNDATION})

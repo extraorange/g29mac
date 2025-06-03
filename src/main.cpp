@@ -95,7 +95,7 @@ bool isG29(IOHIDDeviceRef device) {
 int main(int argc, char* argv[]) {
     std::cout << "------------------- G29&MAC -------------------" << std::endl;
 
-    int mode;
+    int mode = 0;
     if (argc >= 2) mode = std::atoi(argv[1]);
 
     IOHIDManagerRef manager = IOHIDManagerCreate(kCFAllocatorDefault, kIOHIDOptionsTypeNone);
